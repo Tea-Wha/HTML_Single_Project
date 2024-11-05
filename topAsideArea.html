@@ -5,26 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .menu_icon {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 28px;
-        height: 24px;
-        cursor: pointer;
-      }
-      .menu_icon > div {
-        height: 1.5px;
-        background-color: black;
-        border-radius: 1px;
-      }
+    .menu_area {
+  position: absolute;
+  top: 5px;
+  left: -12px;
+  width: 48px;
+  height: 48px;
+  background-color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+/* div의 범위 설정 */
+.menu_area > button {
+  overflow: visible;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0;
+  border: 0;
+  outline: none;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  background-color: red;
+}
+/* button의 범위 설정 */
+.menu_area > button::before,
+.menu_area > button::after,
+.menu_area > button span {
+  content: " ";
+  position: absolute;
+  left: 10px;
+  width: 28px;
+  height: 2px;
+  background-color: black;
+  border-radius: 2px;
+}
+.menu_area > button::before {
+  top: 25%;
+}
+.menu_area > button span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu_area > button::after {
+  bottom: 25%;
+}
+.menu_area > button:hover {
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 50%;
+}
     </style>
   </head>
   <body>
-    <div class="menu_icon">
-      <div></div>
-      <div></div>
-      <div></div>
+    <div id="topAsideArea" class="menu_area">
+      <button
+        id="topAsideButton"
+        type="button"
+        class="btn_menu"
+        aria-haspopup="menu"
+        aria-expanded="false"
+      >
+        <span></span>
+      </button>
     </div>
   </body>
 </html>

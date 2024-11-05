@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>말풍선 아이콘</title>
+    <style>
+      /* 말풍선 아이콘 스타일 */
+      .chat-icon {
+        position: relative;
+        width: 40px; /* 말풍선의 크기 */
+        height: 40px;
+        border: 2px solid black;
+        border-radius: 50%; /* 원형에 가까운 모양으로 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+      }
+
+      /* 말풍선 꼬리 부분 */
+      .chat-icon::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 5px;
+        width: 20px;
+        height: 40px;
+        background-color: white;
+        border: 2px solid black;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 0;
+        transform: rotate(-115deg);
+        border-right: none;
+        border-bottom: none;
+      }
+
+      .chat-icon::before {
+        content: "";
+        position: absolute;
+        bottom: 3.3px;
+        left: -6.6px;
+        width: 8px;
+        height: 5px;
+        background-color: white;
+        border: 2px solid black;
+        z-index: 10;
+        border-top-left-radius: 90%;
+        transform: rotate(-200deg);
+        border-right: none;
+        border-bottom: none;
+      }
+
+      /* 세 개의 점 스타일 */
+      .dots {
+        display: flex;
+        gap: 3px;
+      }
+
+      .dots span {
+        width: 4px;
+        height: 4px;
+        background-color: black;
+        border-radius: 50%; /* 동그란 모양으로 */
+        z-index: 20;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 말풍선 아이콘 -->
+    <div class="chat-icon">
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </body>
+</html>

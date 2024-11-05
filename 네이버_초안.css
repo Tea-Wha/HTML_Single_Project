@@ -35,7 +35,7 @@ div {
 #header {
   width: 1280px;
   margin: 0 auto;
-  background-color: blue;
+  background-color: 0;
 }
 #container {
   position: relative;
@@ -46,13 +46,14 @@ div {
 #footer {
   border-top: 1px solid var(#ebebeb);
   background-color: #f5f6f7;
+  margin: 0 auto;
 }
 #header > .header_inner {
   z-index: 120;
   position: relative;
   height: 156px;
   padding: 52px 0 8px;
-  background-color: white;
+  background-color: 0;
 }
 #header > .header_inner > .menu_area {
   position: absolute;
@@ -64,6 +65,7 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
 }
 #header > .header_inner > .menu_area > button {
   overflow: visible;
@@ -103,29 +105,60 @@ div {
   background-color: rgba(128, 128, 128, 0.1);
 }
 #header > .header_inner > .pay_area {
-  display: flex;
+  display: inline-flex;
   position: absolute;
   top: 5px;
   left: 41px;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
-  border: 2px solid black;
-  border-radius: 50%;
-  font-weight: bold;
+  width: 48px;
+  height: 48px;
   color: black;
-  margin-top: 7px;
-}
-#header > .header_inner > .pay_area > a > span {
-  font-size: 0.65em;
-  vertical-align: 7px;
+  z-index: 10;
 }
 #header > .header_inner > .pay_area > a {
+  display: inline-block;
+  overflow: visible;
   text-decoration: none;
-  color: black;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  width: 48px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#header > .header_inner > .pay_area > a > div {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: 2px solid #080808;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#header > .header_inner > .pay_area > a > div > span {
+  font-size: 0.6em;
+  color: #080808;
+  vertical-align: 7px;
+  font-weight: bold;
+  position: relative;
 }
 #header > .header_inner > .pay_area > a:hover {
   box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
   background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 50%;
+}
+#header > .header_inner > picture {
+  position: absolute;
+  transform: scale(0.5);
+  transform-origin: left top;
+  top: 0px;
+  left: 0px;
 }

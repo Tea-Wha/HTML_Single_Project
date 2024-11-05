@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>벨 아이콘</title>
+    <style>
+      /* 벨 아이콘 컨테이너 */
+      .bell-icon {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border: 2px solid black;
+        border-top-left-radius: 50% 100%;
+        border-top-right-radius: 50% 100%;
+        border-bottom: none;
+        background-color: transparent;
+        box-sizing: border-box;
+      }
+
+      /* 받침대 */
+      .bell-icon::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 16px;
+        height: 6px;
+        background-color: black;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 벨 아이콘 -->
+    <div class="bell-icon"></div>
+  </body>
+</html>

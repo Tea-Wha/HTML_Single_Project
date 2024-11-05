@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  .pay_area {
+  display: inline-flex;
+  position: absolute;
+  top: 5px;
+  left: 41px;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: none;
+  color: black;
+  background-color: rgba(255,0,0,1);
+}
+.pay_area > a > div > span {
+  font-size: 0.65em;
+  color: black;
+  vertical-align: 1px;
+}
+.pay_area > a {
+  display: inline-block;
+  overflow: visible;
+  text-decoration: none;
+  background-color: rgba(0,255,0,1);
+  position: relative;
+  width: 48px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.pay_area > a:hover {
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 50%;
+}
+.pay_area > a > .circle{
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0,0,0,0);
+  border-radius: 50%;
+  border: 2px solid black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+  <div id="topPayArea" class="pay_area">
+            <a
+              href="https://order.pay.naver.com/home"
+              class="link_pay"
+              target="_blank"
+              >
+              <div class="circle">
+                <span class="blind">pay</span>
+              </div>
+              </a
+            >
+          </div>
+</body>
+</html>
