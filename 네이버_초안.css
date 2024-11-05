@@ -1,0 +1,131 @@
+body {
+  background-image: linear-gradient(to bottom, #fff 5%, #fdfdfe 38%);
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+body,
+input,
+textarea,
+select,
+button,
+table {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+body,
+input,
+textarea,
+select,
+button,
+table {
+  color: var(#101010);
+  font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕",
+    helvetica, "Apple SD Gothic Neo", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+#wrap {
+  min-width: 1340px;
+}
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+#header {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: blue;
+}
+#container {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+#footer {
+  border-top: 1px solid var(#ebebeb);
+  background-color: #f5f6f7;
+}
+#header > .header_inner {
+  z-index: 120;
+  position: relative;
+  height: 156px;
+  padding: 52px 0 8px;
+  background-color: white;
+}
+#header > .header_inner > .menu_area {
+  position: absolute;
+  top: 5px;
+  left: -12px;
+  width: 48px;
+  height: 48px;
+  background-color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header > .header_inner > .menu_area > button {
+  overflow: visible;
+  position: relative;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 30px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  width: 45px;
+  height: 45px;
+}
+#header > .header_inner > .menu_area > button::before,
+#header > .header_inner > .menu_area > button::after,
+#header > .header_inner > .menu_area > button span {
+  content: " ";
+  position: absolute;
+  left: 9px;
+  width: 60%;
+  height: 2px;
+  background-color: black;
+  border-radius: 2px;
+}
+#header > .header_inner > .menu_area > button::before {
+  top: 25%;
+}
+#header > .header_inner > .menu_area > button span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+#header > .header_inner > .menu_area > button::after {
+  bottom: 25%;
+}
+#header > .header_inner > .menu_area > button:hover {
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
+  background-color: rgba(128, 128, 128, 0.1);
+}
+#header > .header_inner > .pay_area {
+  display: flex;
+  position: absolute;
+  top: 5px;
+  left: 41px;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-weight: bold;
+  color: black;
+  margin-top: 7px;
+}
+#header > .header_inner > .pay_area > a > span {
+  font-size: 0.65em;
+  vertical-align: 7px;
+}
+#header > .header_inner > .pay_area > a {
+  text-decoration: none;
+  color: black;
+}
+#header > .header_inner > .pay_area > a:hover {
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
+  background-color: rgba(128, 128, 128, 0.1);
+}
