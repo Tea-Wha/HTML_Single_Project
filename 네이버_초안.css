@@ -361,17 +361,18 @@ div {
   width: 40px;
   height: 40px;
 }
-#header > .header_inner > .shorcut_area > ul > li > a > .service_icon > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  vertical-align: top;
-  border: 0;
+#header
+  > .header_inner
+  > .shortcut_area
+  > ul
+  > li
+  > a
+  > .service_icon.type_chzzk::after {
+  background-image: url("image/chzzk.png");
+  background-size: 40px 40px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
   width: 40px;
-  aspect-ratio: auto 40/40;
   height: 40px;
 }
 #header
@@ -554,7 +555,7 @@ div {
   > .tab_type_news {
   position: relative;
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 23px;
   font-weight: 800;
   vertical-align: top;
@@ -615,11 +616,18 @@ div {
 .ContentHeaderView > .Header_tab > .Header_tab_list > .Header_tab_item > .tab {
   position: relative;
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 23px;
   font-weight: 800;
   vertical-align: top;
   color: rgba(8, 8, 8, 0.5);
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
+}
+.ContentHeaderView
+  > .Header_tab
+  > .Header_tab_list
+  > .Header_tab_item
+  + .Header_tab_item {
+  padding-left: 26px;
 }
