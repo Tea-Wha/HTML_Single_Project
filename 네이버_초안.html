@@ -28,7 +28,7 @@
               class="link_pay"
               target="_blank"
               ><div class="circle">
-                <span class="blind">pay</span>
+                <span>pay</span>
               </div>
             </a>
           </div>
@@ -236,9 +236,75 @@
                   </ul>
                 </div>
               </div>
-              <div class="ContentHeaderSubView"></div>
-              <div class="MediaView"></div>
-              <div class="ContentPagingView"></div>
+              <div class="ContentHeaderSubView">
+                <div class="sub_tab">
+                  <ul class="tab_list" role="tablist">
+                    <li class="tab_item" role="presentation">
+                      <a
+                        href="https://tv.naver.com"
+                        target="_blank"
+                        class="module_tab"
+                        role="tab"
+                        aria-selected="false"
+                        >네이버TV</a
+                      >
+                    </li>
+                    <li class="tab_item" role="presentation">
+                      <a
+                        href="https://serieson.naver.com/v2/broadcasting"
+                        target="_blank"
+                        class="module_tab"
+                        role="tab"
+                        aria-selected="false"
+                        >시리즈온</a
+                      >
+                    </li>
+                    <li class="tab_item" role="presentation">
+                      <a
+                        href="https://vibe.naver.com"
+                        target="_blank"
+                        class="module_tab"
+                        role="tab"
+                        aria-selected="false"
+                        >VIBE</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="sub_home">
+                  <a
+                    href="https://entertain.naver.com/home"
+                    target="_blank"
+                    class="link_home"
+                    >연예홈</a
+                  >
+                </div>
+              </div>
+              <div class="MediaView">
+                <div class="media_contents">
+                  <ul
+                    class="media_list"
+                    style="overflow: hidden; max-height: 224px"
+                  >
+                    <li class="media_item"></li>
+                    <li class="media_item"></li>
+                  </ul>
+                </div>
+                <div class="media_contents"></div>
+              </div>
+              <div class="ContentPagingView">
+                <button type="button" class="btn_prev">
+                  <span class="blind">이전 페이지</span>
+                </button>
+                <div class="content_page">
+                  <span class="module_text"></span>
+                  <span class="current"></span>
+                  <span class="module_total"></span>
+                </div>
+                <button type="button" class="btn_next">
+                  <span class="blind">다음 페이지</span>
+                </button>
+              </div>
             </div>
             <div id="shopping" class="Layout_content_area" role="region"></div>
             <div
@@ -247,7 +313,256 @@
               role="region"
             ></div>
           </div>
-          <div class="Layout_right"></div>
+          <div class="Layout_right">
+            <div class="right_content_area">
+              <div class="right_top">
+                <div
+                  id="account"
+                  class="module_content_area"
+                  role="region"
+                  aria-label="로그인 정보"
+                >
+                  <div class="my_login">
+                    <p class="login_text">
+                      네이버를 더 안전하고 편리하게 이용하세요
+                    </p>
+                    <a
+                      href="https://nid.naver.com/nidlogin.login?mode=form&amp;url=https://www.naver.com/"
+                      class="link_login"
+                      ><i class="naver_logo"><span class="blind">NAVER</span></i
+                      >로그인</a
+                    >
+                    <div class="login_more">
+                      <a
+                        href="https://nid.naver.com/user2/api/route?m=routeIdInquiry"
+                        class="module_link_more"
+                        >아이디 찾기</a
+                      >
+                      <a
+                        href="https://nid.naver.com/user2/api/route?m=routePwInquiry"
+                        class="module_link_more"
+                        >비밀번호 찾기</a
+                      >
+                      <a
+                        href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com"
+                        class="module_link_more"
+                        >회원가입</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="module_banner_area" target>
+                  <div
+                    id="right-ad-1"
+                    data-hide-last-sibling="false"
+                    style="height: 240px"
+                  >
+                    <div
+                      style="
+                        width: 420px;
+                        height: 240px;
+                        margin: 0px auto;
+                        position: relative;
+                        line-height: 0;
+                      "
+                    >
+                      <iframe
+                        id="right-ad-1_tgt"
+                        frameborder="no"
+                        scrolling="no"
+                        tabindex="0"
+                        name=""
+                        title="AD"
+                        style="
+                          width: 420px;
+                          height: 240px;
+                          visibility: inherit;
+                          border: 0px;
+                          vertical-align: bottom;
+                          position: absolute;
+                        "
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="https://mkt.naver.com/p1/atrb?channel_id=naver_pcstockbottom&amp;campaign_id=2410-shopping-003&amp;material=kv_black_2&amp;target=https%3A%2F%2Fshopping.naver.com%2Fns%2Fhome%3Fdtm_detail%3Dkv_black_2%26dtm_source%3Dnaver_pcstockbottom%26dtm_medium%3Dmktatrb%26dtm_campaign%3D2410-shopping-003"
+                  class="module_banner_area"
+                  target="_blank"
+                  ><img
+                    src="https://s.pstatic.net/static/www/mobile/edit/20241030_1095/upload_1730252332449cEAH7.png"
+                    width="420"
+                    height="80"
+                    alt="가격은 깎고 쿠폰도 받고 적립은 쌓는 네이버플러스 스토어"
+                /></a>
+                <div class="module_banner_area" target>
+                  <iframe
+                    title="right-shopping"
+                    src="https://recoshopping.naver.com/"
+                    width="100%"
+                    height="172"
+                  ></iframe>
+                </div>
+                <div
+                  class="module_content_area"
+                  role="region"
+                  aria-label="날씨"
+                >
+                  <div class="daily_board_area">
+                    <div class="module_header_group">
+                      <a
+                        href="https://weather.naver.com/"
+                        class="module_header_title"
+                        target="_blank"
+                        rel="noreferrer"
+                        >날씨</a
+                      >
+                      <a
+                        href="https://weather.naver.com/compare/09680101"
+                        class="module_link_info"
+                        target="_blank"
+                        >예보 비교</a
+                      >
+                      <span class="module_btn_location">서울시 역삼동</span>
+                    </div>
+                    <div class="module_info_group">
+                      <div class="module_info_box">
+                        <a
+                          href="https://weather.naver.com/today/09680101?cpName=KMA"
+                          class="module_link_info_detail"
+                          target="_blank"
+                          rel="noreferrer"
+                          ><div class="module_info_weather">
+                            <div class="module_weather_icon"></div>
+                            <div class="module_weather_temperature">
+                              13.3°
+                              <div class="module_weather_status">맑음</div>
+                            </div>
+                          </div>
+                          <div class="module_info_temperature">
+                            <span class="module_temperature_low"
+                              ><span class="blind">최저기온</span>2°</span
+                            ><span class="module_temperature_high"
+                              ><span class="blind">최고기온</span>14°</span
+                            >
+                          </div></a
+                        >
+                        <a
+                          href="https://weather.naver.com/air/09680101?cpName=KMA"
+                          class="module_link_weather_dust"
+                          target="_blank"
+                          rel="noreferrer"
+                          ><span class="module_dust_text"
+                            >미세<span class="module_dust_status"
+                              >보통</span
+                            ></span
+                          ><span class="module_dust_text"
+                            >초미세<span class="module_dust_status"
+                              >보통</span
+                            ></span
+                          ></a
+                        >
+                      </div>
+                      <div class="module_info_box">
+                        <a
+                          href="https://weather.naver.com/today/09680101?cpName=KMA"
+                          class="module_link_info_weather"
+                          target="_blank"
+                          rel="noreferrer"
+                          ><div class="module_weather_graph">
+                            <canvas
+                              width="180"
+                              height="37"
+                              style="
+                                min-width: 100%;
+                                min-height: 100%;
+                                max-width: 100%;
+                                max-height: 100%;
+                              "
+                            ></canvas>
+                          </div>
+                          <ul class="module_weather_list">
+                            <li class="module_weather_item">
+                              <div class="module_time">18시</div>
+                              <div class="module_icon">
+                                <span class="blind">맑음</span>
+                              </div>
+                              <div
+                                class="module_celsius"
+                                style="margin-top: 0px"
+                              >
+                                11°
+                              </div>
+                            </li>
+                            <li class="module_weather_item">
+                              <div class="module_time">20</div>
+                              <div class="module_icon">
+                                <span class="blind">맑음</span>
+                              </div>
+                              <div
+                                class="module_celsius"
+                                style="margin-top: 7.2px"
+                              >
+                                10°
+                              </div>
+                            </li>
+                            <li class="module_weather_item">
+                              <div class="module_time">22</div>
+                              <div class="module_icon">
+                                <span class="blind">맑음</span>
+                              </div>
+                              <div
+                                class="module_celsius"
+                                style="margin-top: 21.6px"
+                              >
+                                8°
+                              </div>
+                            </li>
+                            <li class="module_weather_item">
+                              <div class="module_time">0</div>
+                              <div class="module_icon">
+                                <span class="blind">맑음</span>
+                              </div>
+                              <div
+                                class="module_celsius"
+                                style="margin-top: 28.8px"
+                              >
+                                7°
+                              </div>
+                            </li>
+                            <li class="module_weather_item">
+                              <div class="module_time">2</div>
+                              <div class="module_icon">
+                                <span class="blind">맑음</span>
+                              </div>
+                              <div
+                                class="module_celsius"
+                                style="margin-top: 36px"
+                              >
+                                6°
+                              </div>
+                            </li>
+                          </ul></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="module_content_area"
+                  role="region"
+                  aria-label="증시"
+                ></div>
+                <div class="module_banner_area" target></div>
+                <div
+                  class="module_tool_area"
+                  role="region"
+                  aria-label="위젯"
+                ></div>
+                <div class="module_content_area"></div>
+              </div>
+            </div>
+          </div>
           <div class="Layer_setting"></div>
         </div>
       </div>
