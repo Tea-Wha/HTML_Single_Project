@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="wrap">
-      <div id="header" role="banner">
+      <div id="header" role="banner" class="type_ad">
         <div id="topSearchWrap" class="header_inner">
           <div id="topAsideArea" class="menu_area">
             <button
@@ -19,7 +19,7 @@
               aria-haspopup="menu"
               aria-expanded="false"
             >
-              <span></span>
+              <span class="blind">확장 영역</span>
             </button>
           </div>
           <div id="topPayArea" class="pay_area">
@@ -28,15 +28,16 @@
               class="link_pay"
               target="_blank"
               ><div class="circle">
-                <span>pay</span>
+                <span class="blind">페이 바로가기</span>
               </div>
             </a>
           </div>
-          <picture class="event_bg_wrap"
+          <!-- <picture class="event_bg_wrap"
             ><img
               usemap="#special-logo-map"
               src="https://mml.pstatic.net/www/mobile/edit/20241101_1095/upload_1730464672869rdpAL.gif"
-              alt="소상공인의날" /><map name="special-logo-map"
+              alt="소상공인의날"
+              style="background-color: 0" /><map name="special-logo-map"
               ><area
                 href="https://search.naver.com/search.naver?where=nexearch&amp;sm=top_clk.splogo&amp;fbm=0&amp;ie=utf8&amp;query=%EC%86%8C%EC%83%81%EA%B3%B5%EC%9D%B8%EC%9D%98+%EB%82%A0"
                 target="_blank"
@@ -44,9 +45,18 @@
                 href="https://blog.naver.com/naver_diary/223641685995"
                 target="_blank"
                 coords="0,86, 136,228" /></map
-          ></picture>
+          ></picture> -->
           <div id="search_area" class="search_area"></div>
-          <div id="topTalkArea" class="talk_area"></div>
+          <div id="topTalkArea" class="talk_area">
+            <button
+              type="button"
+              class="btn_talk"
+              aria-haspopup="menu"
+              aria-expanded="false"
+            >
+              <span class="blind">톡</span>
+            </button>
+          </div>
           <div id="topNotiArea" class="notify_area"></div>
           <div id="topShoppingArea" class="shopping_area"></div>
           <div id="shortcutArea" class="shortcut_area">
@@ -173,21 +183,29 @@
                     line-height: 0;
                   "
                 >
-                  <iframe
-                    id="ad_timeboard_tgtLREC"
-                    frameborder="no"
-                    scrolling="no"
-                    tabindex="0"
-                    name=""
-                    title="AD"
-                    style="
-                      width: 100%;
-                      height: 130px;
-                      visibility: inherit;
-                      border: 0px;
-                      vertical-align: bottom;
-                    "
-                  ></iframe>
+                  <a
+                    href="https://web.queenit.kr/collection/COLL241101162739?airbridge_referrer=airbridge%3Dtrue%26event_uuid%3D60f1cf57-b4b7-44df-bae3-89152bd752d9%26client_id%3D6d540c8c-b3cc-4d70-ba15-dd66e4496cf4%26referrer_timestamp%3D1731042129782%26channel%3Dnaver.performance_da%26campaign%3Dweb_nosp_time%26tracking_template_id%3D5b58d7b2c6755014796c822cd20c0c36%26ad_group%3Dweb_nosp_time%26ad_creative%3Dweb_nosp_time_10%26content%3DCOLL241106162440%26routing_short_id%3Dlmeybr%26customparam%3D%257Btrkcvs%257D%26ad_type%3Dclick&utm_source=naver.performance_da&utm_campaign=web_nosp_time&utm_content=COLL241106162440&ad_creative=web_nosp_time_10&ad_group=web_nosp_time&campaign=web_nosp_time&content=COLL241106162440&customparam=%7Btrkcvs%7D&routing_short_id=lmeybr&tracking_template_id=5b58d7b2c6755014796c822cd20c0c36&ad_type=click"
+                    class="module_banner_link"
+                    target="_blank"
+                    style="display: block; width: 100%; height: 100%"
+                  >
+                    <iframe
+                      id="ad_timeboard_tgt"
+                      frameborder="no"
+                      scrolling="no"
+                      tabindex="0"
+                      name=""
+                      title="AD"
+                      style="
+                        width: 100%;
+                        height: 130px;
+                        visibility: inherit;
+                        border: 0px;
+                        vertical-align: bottom;
+                        pointer-events: none;
+                      "
+                    ></iframe>
+                  </a>
                 </div>
               </div>
             </div>
@@ -366,22 +384,30 @@
                         line-height: 0;
                       "
                     >
-                      <iframe
-                        id="right-ad-1_tgt"
-                        frameborder="no"
-                        scrolling="no"
-                        tabindex="0"
-                        name=""
-                        title="AD"
-                        style="
-                          width: 420px;
-                          height: 240px;
-                          visibility: inherit;
-                          border: 0px;
-                          vertical-align: bottom;
-                          position: absolute;
-                        "
-                      ></iframe>
+                      <a
+                        href="https://aptplus99.com/"
+                        class="module_banner_link"
+                        target="_blank"
+                        style="display: block; width: 100%; height: 100%"
+                      >
+                        <iframe
+                          id="right-ad-1_tgt"
+                          frameborder="no"
+                          scrolling="no"
+                          tabindex="0"
+                          name=""
+                          title="AD"
+                          style="
+                            width: 420px;
+                            height: 240px;
+                            visibility: inherit;
+                            border: 0px;
+                            vertical-align: bottom;
+                            position: absolute;
+                            pointer-events: none;
+                          "
+                        ></iframe>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -552,14 +578,444 @@
                   class="module_content_area"
                   role="region"
                   aria-label="증시"
-                ></div>
-                <div class="module_banner_area" target></div>
-                <div
-                  class="module_tool_area"
-                  role="region"
-                  aria-label="위젯"
-                ></div>
-                <div class="module_content_area"></div>
+                >
+                  <div class="daily_board_area">
+                    <div class="module_header_group">
+                      <a
+                        href="https://finance.naver.com/"
+                        class="module_header_title"
+                        target="_blank"
+                        rel="noreferrer"
+                        >증시</a
+                      ><button
+                        type="button"
+                        class="module_btn_info"
+                        aria-expanded="false"
+                        aria-pressed="false"
+                      >
+                        <span class="blind">정보 더보기</span>
+                      </button>
+                      <p class="module_layer_info" aria-hidden="false">
+                        로그인 시 관심 종목의 주가를 확인할 수 있습니다.<br />로그아웃
+                        시 인기 검색 종목이 제공됩니다.<button
+                          type="button"
+                          class="module_btn_close"
+                        >
+                          <span class="blind">닫기</span>
+                        </button>
+                      </p>
+                      <div class="module_header_aside">
+                        11.08. 09:00<button
+                          type="button"
+                          class="module_btn_refresh"
+                        >
+                          <span class="blind">새로고침</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="module_info_group">
+                      <div class="module_info_box">
+                        <div class="module_info_rolling">
+                          <div
+                            class="module_rolling"
+                            style="animation-duration: 3s; animation-delay: 3s"
+                          >
+                            <a
+                              href="https://finance.naver.com/marketindex/exchangeDetail.nhn?marketindexCd=FX_USDKRW"
+                              class="module_link_stock"
+                              target="_blank"
+                              rel="noreferrer"
+                              ><div class="module_stock_info">
+                                <div class="module_stock_name">환율 USD</div>
+                                <div class="module_stock_price">1,384.00</div>
+                                <div class="module_stock_gap">
+                                  <i class="module_icon_status"
+                                    ><span class="blind">하락</span></i
+                                  >1.00<span class="module_rate_down"
+                                    >-0.07%</span
+                                  >
+                                </div>
+                                <div class="module_stock_graph">
+                                  <img
+                                    src="https://ssl.pstatic.net/imgfinance/chart/mobile/marketindex/month3/FX_USDKRW_naverpc_l.png"
+                                    width="180"
+                                    height="44"
+                                    alt=""
+                                  />
+                                </div>
+                                <p class="module_stock_text">3개월 차트</p>
+                              </div></a
+                            >
+                          </div>
+                          <div
+                            class="module_rolling"
+                            style="animation-duration: 3s; animation-delay: 3s"
+                          >
+                            <a
+                              href="https://finance.naver.com/sise/sise_index.nhn?code=KOSPI"
+                              class="module_link_stock"
+                              target="_blank"
+                              rel="noreferrer"
+                              ><div class="module_stock_info">
+                                <div class="module_stock_name">코스피</div>
+                                <div class="module_stock_price">2,564.63</div>
+                                <div class="module_stock_gap">
+                                  <i class="module_icon_status"
+                                    ><span class="blind">변동없음</span></i
+                                  >0.00<span class="module_rate">0.00%</span>
+                                </div>
+                                <div class="module_stock_graph">
+                                  <img
+                                    src="https://ssl.pstatic.net/imgfinance/chart/mobile/mini/KOSPI_naverpc_l.png"
+                                    width="180"
+                                    height="72"
+                                    alt=""
+                                  />
+                                </div></div
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="module_info_box">
+                        <ul class="module_stock_list">
+                          <li class="module_stock_item">
+                            <a
+                              href="https://finance.naver.com/item/main.naver?code=035420"
+                              class="module_link_stock"
+                              target="_blank"
+                              rel="noreferrer"
+                              ><span class="module_stock_name">NAVER</span
+                              ><span class="module_stock_price"
+                                ><i class="module_icon_status"
+                                  ><span class="blind">변동없음</span></i
+                                ><span class="module_stock_rate">0.00%</span
+                                >179,700</span
+                              ></a
+                            >
+                          </li>
+                          <li class="module_stock_item">
+                            <a
+                              href="https://finance.naver.com/item/main.naver?code=005930"
+                              class="module_link_stock"
+                              target="_blank"
+                              rel="noreferrer"
+                              ><span class="module_stock_name">삼성전자</span
+                              ><span class="module_stock_price"
+                                ><i class="module_icon_status"
+                                  ><span class="blind">변동없음</span></i
+                                ><span class="module_stock_rate">0.00%</span
+                                >57,500</span
+                              ></a
+                            >
+                          </li>
+                          <li class="module_stock_item">
+                            <a
+                              href="https://finance.naver.com/item/main.naver?code=042660"
+                              class="module_link_stock"
+                              target="_blank"
+                              rel="noreferrer"
+                              ><span class="module_stock_name">한화오션</span
+                              ><span class="module_stock_price"
+                                ><i class="module_icon_status"
+                                  ><span class="blind">변동없음</span></i
+                                ><span class="module_stock_rate">0.00%</span
+                                >33,850</span
+                              ></a
+                            >
+                          </li>
+                          <li class="module_stock_item">
+                            <a
+                              target="_blank"
+                              href="https://finance.naver.com/sise/lastsearch2.naver"
+                              class="module_link_stock"
+                              >인기종목 더보기</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="module_banner_area" target>
+                  <div id="right-ad-2" data-hide-last-sibling="false">
+                    <div
+                      style="
+                        width: 100%;
+                        height: auto;
+                        margin: 0px auto;
+                        position: relative;
+                        line-height: 0;
+                      "
+                    >
+                      <a
+                        href="https://siape.veta.naver.com/fxclick?eu=EU10043564&calp=-&oj=cQgn6aire5MtcldcI18a5ajDlN75FEQNC7hZGq9cEr0BPzPKAQ9I7eeeeAz95%2F%2FJ8FloalkuKHhb%2FTQFbejcQfSqTh6xt0jo8%2BmMHjI2b2Ka%2FBchzmUwtMH%2FSIDdAhZy%2FFXDSULJMhk51V%2B8DRAnT%2FW1YEqVwubmAQMCMuhPEN1D5LKGCi1AZdW3btaVUpBhIWptTJi1%2Bun6Q03gbIO7AU9SANRnAatvsVQY00Y52lrSBXLlLuiKzHksq5tTslRW1qYNWXGuY5MvV6Hp3yIx%2BKYsBpisRifXesTfR%2BY4FxhVfU5UyXHzgZZNNIeTb5Soa0QOPnenAgVGbLgjTgA4kc14oLHQHM6TgIIvXY3VsvA&ac=9043315&src=7334822&br=4623119&evtcd=P901&x_ti=1503&tb=&oid=&sid1=&sid2=&rk=Q1BsTBdmYPuMwpqkcd85Sg&eltts=lNY%2BR4eHtZO6FXAiD%2Fjb7g%3D%3D&lu=&brs=Y&"
+                        class="module_banner_link"
+                        target="_blank"
+                        style="display: block; width: 100%; height: 100%"
+                      >
+                        <iframe
+                          id="right-ad-2_tgt"
+                          frameborder="no"
+                          scrolling="no"
+                          tabindex="0"
+                          name=""
+                          title="AD"
+                          style="
+                            width: 100%;
+                            height: 240px;
+                            visibility: inherit;
+                            border: 0px;
+                            vertical-align: bottom;
+                            pointer-events: none;
+                          "
+                        ></iframe>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="module_tool_area" role="region" aria-label="위젯">
+                  <div class="module_tool_title">위젯 보드</div>
+                  <div class="module_tool_content">
+                    <div class="module_tool_wrap" style="overflow: hidden">
+                      <div class="module_tool_group">
+                        <div class="module_calendar_box">
+                          <div class="module_title_box">
+                            <span class="module_title">캘린더</span>
+                          </div>
+                          <div class="module_info_box">
+                            <div class="module_link_info_date">
+                              11.8
+                              <span class="module_day">금</span>
+                            </div>
+                          </div>
+                          <a
+                            href="https://nid.naver.com/nidlogin.login?mode=form&amp;url=https://www.naver.com/?to=widget"
+                            ><span class="module_link_login"
+                              >로그인하기</span
+                            ></a
+                          >
+                          <a
+                            href="https://nid.naver.com/nidlogin.login?mode=form&amp;url=https://www.naver.com/?to=widget"
+                            class="module_link_table"
+                            ><table class="module_calendar_table">
+                              <caption class="blind">
+                                캘린더
+                              </caption>
+                              <thead>
+                                <tr>
+                                  <th class="module_sunday">일</th>
+                                  <th>월</th>
+                                  <th>화</th>
+                                  <th>수</th>
+                                  <th>목</th>
+                                  <th>금</th>
+                                  <th>토</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="module_dimmed_sunday">27</td>
+                                  <td class="module_dimmed">28</td>
+                                  <td class="module_dimmed">29</td>
+                                  <td class="module_dimmed">30</td>
+                                  <td class="module_dimmed">31</td>
+                                  <td class="">1</td>
+                                  <td class="">2</td>
+                                </tr>
+                                <tr>
+                                  <td class="module_sunday">3</td>
+                                  <td class="">4</td>
+                                  <td class="">5</td>
+                                  <td class="">6</td>
+                                  <td class="">7</td>
+                                  <td class="module_current">8</td>
+                                  <td class="">9</td>
+                                </tr>
+                                <tr>
+                                  <td class="module_sunday">10</td>
+                                  <td class="">11</td>
+                                  <td class="">12</td>
+                                  <td class="">13</td>
+                                  <td class="">14</td>
+                                  <td class="">15</td>
+                                  <td class="">16</td>
+                                </tr>
+                                <tr>
+                                  <td class="module_sunday">17</td>
+                                  <td class="">18</td>
+                                  <td class="">19</td>
+                                  <td class="">20</td>
+                                  <td class="">21</td>
+                                  <td class="">22</td>
+                                  <td class="">23</td>
+                                </tr>
+                                <tr>
+                                  <td class="module_sunday">24</td>
+                                  <td class="">25</td>
+                                  <td class="">26</td>
+                                  <td class="">27</td>
+                                  <td class="">28</td>
+                                  <td class="">29</td>
+                                  <td class="">30</td>
+                                </tr>
+                              </tbody>
+                            </table></a
+                          >
+                        </div>
+                        <div class="module_vibe_box">
+                          <div class="module_vibe_top">
+                            <i class="module_icon_vibe"></i>
+                            <div class="module_vibe_title">나를사랑하는법</div>
+                            <button
+                              type="button"
+                              class="module_vibe_btn_refresh"
+                            >
+                              다른 추천 보기
+                            </button>
+                          </div>
+                          <ul class="module_vibe_list">
+                            <li class="module_vibe_item">
+                              <a
+                                href="https://vibe.naver.com/audio_player?curationId=1110&amp;contentId=CH_315_EP_1122&amp;audioContentId=CH_315_EP_1122"
+                                class="module_link_music"
+                                target="_blank"
+                                rel="noreferrer"
+                                ><span
+                                  class="module_content_img"
+                                  style="width: 108px; height: 126px"
+                                  ><img
+                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Faudio.phinf%2F20240506_14%2F1714965217846QOUd5_JPEG%2F%25B1%25E8%25C8%25A3%25BF%25C0%25B5%25F0%25BF%25C0%25C5%25AC%25B8%25B3-%25BD%25E6%25B3%25D7%25C0%25CF.jpg%22&amp;type=f218_252&amp;service=navermain"
+                                    width="108"
+                                    height="126"
+                                    alt=""
+                                    loading="eager" /></span
+                                ><strong class="module_title"
+                                  >진정 원하는 삶을 위한 단 하나의 질문 | 김호
+                                  더랩에이치 대표</strong
+                                ><i class="module_icon_play"
+                                  ><span class="blind">재생</span></i
+                                ></a
+                              >
+                            </li>
+                            <li class="module_vibe_item">
+                              <a
+                                href="https://vibe.naver.com/audio_player?curationId=1110&amp;contentId=CH_315_EP_1107&amp;audioContentId=CH_315_EP_1107"
+                                class="module_link_music"
+                                target="_blank"
+                                rel="noreferrer"
+                                ><span
+                                  class="module_content_img"
+                                  style="width: 108px; height: 126px"
+                                  ><img
+                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Faudio.phinf%2F20240327_142%2F1711529986786I7DiO_JPEG%2F%25C0%25B1%25BC%25F6%25BA%25F3%25BF%25C0%25B5%25F0%25BF%25C0%25C5%25AC%25B8%25B3.jpg%22&amp;type=f218_252&amp;service=navermain"
+                                    width="108"
+                                    height="126"
+                                    alt=""
+                                    loading="eager" /></span
+                                ><strong class="module_title"
+                                  >원하는 삶을 만드는 집중과 신경 끄기의 기술 |
+                                  윤수빈 틱톡 크리에이터</strong
+                                ><i class="module_icon_play"
+                                  ><span class="blind">재생</span></i
+                                ></a
+                              >
+                            </li>
+                            <li class="module_vibe_item">
+                              <a
+                                href="https://vibe.naver.com/audio_player?curationId=1110&amp;contentId=CH_315_EP_1106&amp;audioContentId=CH_315_EP_1106"
+                                class="module_link_music"
+                                target="_blank"
+                                rel="noreferrer"
+                                ><span
+                                  class="module_content_img"
+                                  style="width: 108px; height: 126px"
+                                  ><img
+                                    src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Faudio.phinf%2F20240325_242%2F17113457837489YP0M_JPEG%2F%25BE%25C6%25B6%25F6%25B6%25F3_%25BF%25C0%25B5%25F0%25BF%25C0%25C5%25AC%25B8%25B3%25BD%25E6%25B3%25D7%25C0%25CF.jpg%22&amp;type=f218_252&amp;service=navermain"
+                                    width="108"
+                                    height="126"
+                                    alt=""
+                                    loading="eager" /></span
+                                ><strong class="module_title"
+                                  >원하는 인생을 살려면이 질문을 던져보세요 |
+                                  김아라 틱톡 크리에이터 '아랄라'</strong
+                                ><i class="module_icon_play"
+                                  ><span class="blind">재생</span></i
+                                ></a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="module_tool_group"></div>
+                    </div>
+                    <button type="button" class="module_btn_next">
+                      <span class="blind">다음 페이지</span>
+                    </button>
+                  </div>
+                  <a href="https://m.naver.com/" class="module_link_download"
+                    ><strong>모바일 네이버 메인</strong>&nbsp;열기</a
+                  >
+                </div>
+                <div class="module_content_area">
+                  <div class="module_banner_box">
+                    <div class="module_banner_rolling">
+                      <div
+                        class="module_rolling-x"
+                        style="animation-duration: 3s"
+                      >
+                        <a
+                          href="https://mkt.naver.com/p1/atrb?channel_id=naver_pcwidgetbottom&amp;campaign_id=2410-shopping-003&amp;material=kv_black_2&amp;target=https%3A%2F%2Fshopping.naver.com%2Fns%2Fhome%3Fdtm_detail%3Dkv_black_2%26dtm_source%3Dnaver_pcwidgetbottom%26dtm_medium%3Dmktatrb_mn%26dtm_campaign%3D2410-shopping-003"
+                          class="module_link_banner"
+                          target="_blank"
+                          ><span class="module_banner_thumb"
+                            ><img
+                              src="https://s.pstatic.net/static/www/mobile/edit/20241030_1095/upload_1730252541750zlLGO.png"
+                              width="42"
+                              height="42"
+                              alt=""
+                          /></span>
+                          <div class="module_banner_desc">
+                            <div class="module_desc_text1">
+                              네이버플러스 스토어 오픈
+                            </div>
+                            <div class="module_desc_text2">
+                              깎고+받고+쌓는 셈이 다른 쇼핑
+                            </div>
+                          </div></a
+                        >
+                      </div>
+                      <div
+                        class="module_rolling-x"
+                        style="animation-duration: 3s"
+                      >
+                        <a
+                          href="https://mkt.naver.com/p1/atrb?channel_id=naver_pcwidgetbottom&amp;campaign_id=2411-shopping-001&amp;target=https%3A%2F%2Fshopping.naver.com%2Ffesta%2Fonsale%2F670f78df91d482212088731d%3Fdtm_source%3Dnaver_pcwidgetbottom%26dtm_medium%3Dmktatrb_mn%26dtm_campaign%3D2411-shopping-001"
+                          class="module_link_banner"
+                          target="_blank"
+                          ><span class="module_banner_thumb"
+                            ><img
+                              src="https://s.pstatic.net/static/www/mobile/edit/20241101_1095/upload_17304407629933y6Lu.png"
+                              width="42"
+                              height="42"
+                              alt=""
+                          /></span>
+                          <div class="module_banner_desc">
+                            <div class="module_desc_text1">
+                              강세일 블랙프라이데이
+                            </div>
+                            <div class="module_desc_text2">
+                              매일 선착순 할인 쿠폰!
+                            </div>
+                          </div></a
+                        >
+                      </div>
+                    </div>
+                    <div class="module_banner_indicator">
+                      <span class="module_dot"></span>
+                      <span class="module_dot_active"></span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
