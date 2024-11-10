@@ -442,14 +442,14 @@
                           href="#"
                           class="tab_text"
                           role="tab"
-                          aria-selected="false"
+                          aria-selected="true"
                           >뉴스스탠드</a
                         >
                         <a
                           href="#"
                           class="tab_text"
                           role="tab"
-                          aria-selected="true"
+                          aria-selected="false"
                           >언론사편집</a
                         >
                       </span>
@@ -461,7 +461,7 @@
                     </li>
                     <li class="Header_tab_item">
                       <a href="#" class="tab" role="tab" aria-selected="false"
-                        >스포츠</a
+                        >스포츠 <span class="Header_tag_live">LIVE</span></a
                       >
                     </li>
                     <li class="Header_tab_item">
@@ -478,60 +478,369 @@
                 </div>
               </div>
               <div class="ContentHeaderSubView">
-                <div class="sub_tab">
-                  <ul class="tab_list" role="tablist">
-                    <li class="tab_item" role="presentation">
-                      <a
-                        href="https://tv.naver.com"
-                        target="_blank"
-                        class="module_tab"
-                        role="tab"
-                        aria-selected="false"
-                        >네이버TV</a
-                      >
-                    </li>
-                    <li class="tab_item" role="presentation">
-                      <a
-                        href="https://serieson.naver.com/v2/broadcasting"
-                        target="_blank"
-                        class="module_tab"
-                        role="tab"
-                        aria-selected="false"
-                        >시리즈온</a
-                      >
-                    </li>
-                    <li class="tab_item" role="presentation">
-                      <a
-                        href="https://vibe.naver.com"
-                        target="_blank"
-                        class="module_tab"
-                        role="tab"
-                        aria-selected="false"
-                        >VIBE</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="sub_home">
+                <a
+                  href="#"
+                  class="HeaderSubView-module_btn_more"
+                  role="button"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                  aria-pressed="false"
+                  >전체언론사<i class="HeaderSubView-module_icon_triangle"></i
+                ></a>
+                <div class="HeaderSubView-module_sub_news">
                   <a
-                    href="https://entertain.naver.com/home"
+                    href="https://news.naver.com/main/list.naver?mode=LPOD&amp;mid=sec&amp;sid1=001&amp;sid2=140&amp;oid=001&amp;isYeonhapFlash=Y"
                     target="_blank"
-                    class="link_home"
-                    >연예홈</a
+                    class="HeaderSubView-module_news_media"
+                    >연합뉴스</a
+                  >
+                  <div class="HeaderSubView-module_news_box">
+                    <div
+                      class="module_rolling-y"
+                      style="animation-duration: 1s"
+                    >
+                      <div class="HeaderSubView-module_news_desc">
+                        <div class="HeaderSubView-module_news_title">
+                          <a
+                            href="https://news.naver.com/main/list.naver?mode=LPOD&amp;mid=sec&amp;sid1=001&amp;sid2=140&amp;oid=001&amp;isYeonhapFlash=Y&amp;aid=0015036448"
+                            target="_blank"
+                            >韓, 쇄신요구서 실천으로 행보전환…'李선고' 공세도
+                            고삐</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="module_rolling-y"
+                      style="animation-duration: 1s"
+                    >
+                      <div class="HeaderSubView-module_news_desc">
+                        <div class="HeaderSubView-module_news_title">
+                          <a
+                            href="https://news.naver.com/main/list.naver?mode=LPOD&amp;mid=sec&amp;sid1=001&amp;sid2=140&amp;oid=001&amp;isYeonhapFlash=Y&amp;aid=0015036145"
+                            target="_blank"
+                            >이재명, 트럼프 당선에 '먹사니즘' 해석…"尹과 케미
+                            안맞을 것"</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="HeaderSubView-module_sub_home">
+                  <a
+                    href="https://newsstand.naver.com/"
+                    target="_blank"
+                    class="HeaderSubView-module_link_home"
+                    >뉴스스탠드</a
+                  ><a
+                    href="https://news.naver.com/"
+                    target="_blank"
+                    class="HeaderSubView-module_link_home"
+                    >뉴스홈</a
                   >
                 </div>
               </div>
               <div class="MediaView">
-                <div class="media_contents">
-                  <ul
-                    class="media_list"
-                    style="overflow: hidden; max-height: 224px"
-                  >
-                    <li class="media_item"></li>
-                    <li class="media_item"></li>
-                  </ul>
+                <div class="module_media_subscription">
+                  <div class="module_subscription_frame">
+                    <i class="module_line_to_right1"></i
+                    ><i class="module_line_to_right2"></i
+                    ><i class="module_line_to_right3"></i
+                    ><i class="module_line_to_bottom1"></i
+                    ><i class="module_line_to_bottom2"></i
+                    ><i class="module_line_to_bottom3"></i
+                    ><i class="module_line_to_bottom4"></i
+                    ><i class="module_line_to_bottom5"></i>
+                  </div>
+                  <div class="module_subscription_group">
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2019/logo/011.png"
+                          height="20"
+                          alt="서울경제"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/up/2024/0731/nsd1419103.png"
+                          height="20"
+                          alt="뉴시스"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/009.png"
+                          height="20"
+                          alt="매일경제"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/076.png"
+                          height="20"
+                          alt="스포츠조선"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/056.png"
+                          height="20"
+                          alt="KBS"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/930.png"
+                          height="20"
+                          alt="뉴스타파"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/014.png"
+                          height="20"
+                          alt="파이낸셜뉴스"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/214.png"
+                          height="20"
+                          alt="MBC"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/044.png"
+                          height="20"
+                          alt="코리아헤럴드"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/002.png"
+                          height="20"
+                          alt="프레시안"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/005.png"
+                          height="20"
+                          alt="국민일보"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/079.png"
+                          height="20"
+                          alt="노컷뉴스"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/366.png"
+                          height="20"
+                          alt="조선비즈"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/117.png"
+                          height="20"
+                          alt="마이데일리"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/032.png"
+                          height="20"
+                          alt="경향신문"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/980.png"
+                          height="20"
+                          alt="KBC광주방송"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/384.png"
+                          height="20"
+                          alt="한국대학신문"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/up/2024/0701/nsd105216680.png"
+                          height="20"
+                          alt="딜사이트 경제TV"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/902.png"
+                          height="20"
+                          alt="TV조선"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/975.png"
+                          height="20"
+                          alt="시사저널이코노미"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/up/2023/0418/nsd124451202.png"
+                          height="20"
+                          alt="여성동아"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a href="#" class="module_news_thumb" aria-disabled="true"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/024.png"
+                          height="20"
+                          alt="매경이코노미"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/138.png"
+                          height="20"
+                          alt="디지털데일리"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                    <div class="module_subscription_box">
+                      <a
+                        href="#"
+                        class="module_news_thumb"
+                        aria-disabled="false"
+                        ><img
+                          src="https://s.pstatic.net/static/newsstand/2020/logo/light/0604/964.png"
+                          height="20"
+                          alt="이뉴스투데이"
+                          class="news_logo"
+                      /></a>
+                    </div>
+                  </div>
                 </div>
-                <div class="media_contents"></div>
               </div>
               <div class="ContentPagingView">
                 <button type="button" class="btn_prev">
